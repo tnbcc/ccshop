@@ -1281,7 +1281,7 @@ charenc@~0.0.1:
 
 china-area-data@^4.0.0:
   version "4.0.0"
-  resolved "https://registry.yarnpkg.com/china-area-data/-/china-area-data-4.0.0.tgz#95c27bf4dff8b99ee92f972b1739d551da7f303b"
+  resolved "http://registry.npm.taobao.org/china-area-data/download/china-area-data-4.0.0.tgz#95c27bf4dff8b99ee92f972b1739d551da7f303b"
 
 chokidar@^1.7.0:
   version "1.7.0"
@@ -6772,7 +6772,7 @@ svgo@^1.0.0:
 
 sweetalert@^2.1.0:
   version "2.1.0"
-  resolved "https://registry.yarnpkg.com/sweetalert/-/sweetalert-2.1.0.tgz#d605dec840058fa8ad4a1f7c2c8c194bc72c27fa"
+  resolved "http://registry.npm.taobao.org/sweetalert/download/sweetalert-2.1.0.tgz#d605dec840058fa8ad4a1f7c2c8c194bc72c27fa"
   dependencies:
     es6-object-assign "^1.1.0"
     promise-polyfill "^6.0.2"
