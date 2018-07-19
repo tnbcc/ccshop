@@ -34,4 +34,33 @@ class UserAddressesController extends Controller
 
         return redirect()->route('user_addresses.index');
     }
+    public function edit(UserAddress $address)
+    {
+        $this->authorize('own', $address);
+        return view('user_addresses.create_and_edit',compact('address'));
+    }
+
+    public function update(UserAddress $address, UserAddressRequest $request)
+    {
+        $this->authorize('own', $address);
+        $address->update($request->only([
+            'province',
+            'city',
+            'district',
+            'address',
+            'zip',
+            'contact_name',
+            'contact_phone',
+        ]));
+
+        return redirect()->route('user_addresses.index');
+    }
+
+    public function destory(UserAddress $address)
+    {
+        $this->authorize('own', $address);
+        $address->delete();
+       // 把之前的 redirect 改成返回空数组
+        return [];
+    }
 }
