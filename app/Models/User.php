@@ -48,4 +48,9 @@ class User extends Authenticatable
             ->withTimestamps()
             ->latest('user_favorite_products.created_at');
     }
+    public function cartItems()
+    {
+        return $this->hasMany(CartItem::class);
+    }
+
 }

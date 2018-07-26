@@ -19,6 +19,8 @@ Route::group(['middleware'=>'auth'],function () {
         Route::delete('user_addresses/{address}', 'UserAddressesController@destory')->name('user_addresses.destroy');
         Route::post('products/{product}/favorite', 'ProductsController@favor')->name('products.favor');
         Route::delete('products/{product}/favorite', 'ProductsController@disfavor')->name('products.disfavor');
+
+        Route::post('cart','CartController@add')->name('cart.add');
     });
 });
 
