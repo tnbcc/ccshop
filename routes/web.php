@@ -5,6 +5,7 @@ Auth::routes();
 Route::get('/','PagesController@root')->name('pages.root');
 Route::get('products', 'ProductsController@index')->name('products.index');
 Route::get('products/{product}', 'ProductsController@show')->name('products.show');
+Route::get('test','TestController@index');
 
 Route::group(['middleware'=>'auth'],function () {
     Route::get('/email_verify_notice','PagesController@emailVerifyNotice')->name('email_verify_notice');
