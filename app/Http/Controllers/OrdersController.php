@@ -102,7 +102,7 @@ class OrdersController extends Controller
     });
         return redirect()->back();
     }
-
+     //申请退款
     public function applyRefund(Order $order, ApplyRefundRequest $request)
     {
         // 校验订单是否属于当前用户
@@ -126,4 +126,5 @@ class OrdersController extends Controller
 
         return $order;
     }
+
 }
