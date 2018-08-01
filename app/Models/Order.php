@@ -58,6 +58,7 @@ class Order extends Model
     protected $dates = [
         'paid_at',
     ];
+
     protected static function boot()
     {
         parent::boot();
@@ -112,5 +113,11 @@ class Order extends Model
           return $no;
 
     }
+    public function CouponCode()
+    {
+       return $this->belongsTo(CouponCode::class);
+    }
+
+
 
 }
